@@ -7,16 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".app.detail.view.CountriesDetailFragment" >
 
-    <SearchView
-        android:id="@+id/searchView"
+    <EditText
+        android:id="@+id/etFilter"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:hint="Search"
+        android:maxLines="1"
+        android:singleLine="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tbList" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCountries"
@@ -24,9 +27,33 @@
         android:layout_height="0dp"
         android:paddingHorizontal="16dp"
         android:paddingVertical="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/etFilter"
         tools:listitem="@layout/country_item_layout" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/rvCountries"
+        app:layout_constraintEnd_toEndOf="@+id/rvCountries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFilter" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbList"
+        android:layout_width="409dp"
+        app:title="Country Search"
+        app:titleTextColor="@color/white"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

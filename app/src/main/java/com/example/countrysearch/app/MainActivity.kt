@@ -1,8 +1,7 @@
 package com.example.countrysearch.app
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.countrysearch.R
+import androidx.appcompat.app.AppCompatActivity
 import com.example.countrysearch.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -10,7 +9,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }

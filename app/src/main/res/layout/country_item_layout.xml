@@ -39,6 +39,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tvCountryName"
         app:layout_constraintTop_toBottomOf="@+id/tvCountryName"
-        tools:text="VE,BR,PE" />
+        tools:text="Lima" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

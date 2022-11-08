@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CountrySearch</string>
+    <string name="text_borders">Region: %1$s</string>
+    <string name="text_capital">Capital: %1$s</string>
+    <string name="Text_name">Official Name: %1$s</string>
+    <string name="text_region">Region: %1$s</string>
 </resources>

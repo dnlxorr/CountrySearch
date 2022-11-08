@@ -17,5 +17,21 @@
         android:id="@+id/countriesDetailFragment"
         android:name="com.example.countrysearch.app.detail.view.CountriesDetailFragment"
         android:label="fragment_country_detail"
-        tools:layout="@layout/fragment_country_detail" />
+        tools:layout="@layout/fragment_country_detail" >
+        <argument
+            android:name="flag"
+            app:argType="string" />
+        <argument
+            android:name="capital"
+            app:argType="string" />
+        <argument
+            android:name="borders"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="region"
+            app:argType="string" />
+    </fragment>
 </navigation>
