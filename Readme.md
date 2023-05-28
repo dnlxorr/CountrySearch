@@ -6,5 +6,3 @@ El proyecto se construyó bajo una arquitectura MVVM en la cual las vistas (View
 
 Se utilizó la librería Picasso para cargar las imágenes. Retrofit como interface para la obtención de los datos junto con Gson para deserializar la respuesta del servicio. Las peticiones de red se realizaron en un hilo diferente al principal, haciendo uso de corrutinas.
 
-Los pantallazos se encuentran en la carpeta Screenshots dentro del directorio app del proyecto.
-
